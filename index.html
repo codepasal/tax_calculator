@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Tax Calculator</title>
+  </head>
+  <body style="margin: 40px;">
+    <div class="container">
+      <h1>Welcome to the Tax Calculator</h1>
+      <form id="formcalc" onsubmit="return false;">
+        <label>Basic Salary *:</label>
+        <input type="text" id="basicSalary" name="basicSalary" required />
+
+        <label>Medical Allowance * :</label>
+        <input type="text" id="medicalAllowance" name="medicalAllowance" required/> 
+        <input type ="submit" id="submit" name="submit" value="Submit" onclick="calculations()" />
+      </form>
+        <!-- <input type ="button" id="submit" name="submit" value="Submit"onclick="calculations()"/> -->
+        <p>Your monthly sum is: <span id="total"></span></p>
+        <p>Your yearly income is: <span id="yearly-income"></span></p>
+        <label> What is your marital status? *</label>
+        <input type="radio" id="single" name="status" value="single" onclick="individual()">
+        <label for="single">Individual</label>
+
+        <input type="radio" id="married" name="status" value="married" onclick="couple()">
+        <label for="married">Couple</label> </br>
+        <p>Your yearly tax income is: <span id="yearly-tax"></span></p>
+        <p>Your monthly tax income is: <span id="monthly-tax"></span></p>
+        <br /><br />
+      
+    </div>
+    <script src="index.js"></script>
+    
+  </body>
+</html>
