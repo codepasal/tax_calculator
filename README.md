@@ -8,5 +8,5 @@
 - Then the tax per year is auto populated and hence monthly income value is provided at end. 
 
 ### How to run the project locally: ###
-- You need to clone the repo from 
+- You need to clone the repo from https://github.com/codepasal/tax_calculator.git
 - Open the index.html file in browser.
